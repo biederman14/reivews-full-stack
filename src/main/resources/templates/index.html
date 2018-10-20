@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<link rel="stylesheet" type="text/css" href="/css/style.css">
-<link rel="stylesheet" type="text/css" href="/css/layout.css">
-<head>
-	<title>This is the Main (Index) Page</title>
-</head>
-<body>
-	<footer>
-		<small>&copy; 2018</small>
-	</footer>
-</body>
+
+	<head>
+		<title>This is the Main (Index) Page</title>
+	</head>
+	<body>
+		<header>
+			<h1>Really Cool Rock Stuff</h1>
+		</header>
+		<main>
+			<a th:href="categories">categories</a>
+			<a th:href="reviews">reviews</a>
+		</main>
+	</body>
+
 </html>

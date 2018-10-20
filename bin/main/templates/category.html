@@ -2,16 +2,19 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
 	<title>This is the Category Page</title>
-</head><li th:each="review : ${category.reviews}">
-		<a th:href="|/category/${review.id}|" th:text="${review.crag
-		Name}"></a>
-	</li>
+
+</head>
+	<ul th:each="review : ${category.reviews}">
+		<li th:text="${review.cragName}"><a th:href="|/reviews/${category.review.id}|">Review of:</a>
+			
+		</li>
+	</ul>
 <body>
 	<main>
 		
 	</main>
 	<footer>
-		<a href="/index">Back Home</a>
+		<a href="/">Back Home</a>
 		<small>&copy; 2018</small>
 	</footer>
 </body>
