@@ -2,6 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
 	<title>This is the Category Page</title>
+
 </head>
 	<ul th:each="review : ${category.reviews}">
 		<li th:text="${review.cragName}"><a th:href="|/reviews/${category.review.id}|">Review of:</a>
