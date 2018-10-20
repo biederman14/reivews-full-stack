@@ -3,10 +3,16 @@
 <head>
 	<title>This is the Category Page</title>
 </head><li th:each="review : ${category.reviews}">
-		<a th:href="|/category/${review.id}|" th:text="${review.cragName}"></a>
+		<a th:href="|/category/${review.id}|" th:text="${review.crag
+		Name}"></a>
 	</li>
 <body>
-
-	
+	<main>
+		
+	</main>
+	<footer>
+		<a href="/index">Back Home</a>
+		<small>&copy; 2018</small>
+	</footer>
 </body>
 </html>
