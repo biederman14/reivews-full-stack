@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Categories</title>
+</head>
+<body>
+	<li th:each="category : ${categories}">
+		<a th:href="|/categories/${category.id}|" th:text="${category.stateName}"></a>
+	</li>
+	<footer>
+		<a href="/index">Back Home</a>
+		<small>&copy; 2018</small>
+	</footer>
+</body>
+</html>

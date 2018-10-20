@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>This is the Category Page</title>
+</head><li th:each="review : ${category.reviews}">
+		<a th:href="|/category/${review.id}|" th:text="${review.cragName}"></a>
+	</li>
+<body>
+
+	
+</body>
+</html>
