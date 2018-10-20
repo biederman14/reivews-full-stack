@@ -1,9 +1,39 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-	<title>This is the Review Page</title>
+	<title th:text="|${review.cragName}|">Review</title>
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+		<link rel="stylesheet" type="text/css" href="/css/style.css">
+
 </head>
 <body>
+	<div class="container">
+		<header>
+			<h1 th:text="${review.getCragName()}"></h1>
+		</header>
 
+		 <main>
+		<ul>
+				<li>
+					<h2>Location</h2>
+					<address th:text="${review.getLocation()}"></address>
+				</li>
+
+				<li>
+					<h2>Route Number</h2>
+					<address th:text="${review.getNumberOfRoutes()}"></address>
+				</li>
+
+				<li>
+					<h2>Description</h2>
+					<address th:text="${review.getDescription()}"></address>
+				</li>
+			</ul>
+		</main> -->
+		<footer>
+			<a href="/">Back Home</a>
+			<small>&copy; 2018</small>
+		</footer>
+	</div>
 </body>
 </html>
