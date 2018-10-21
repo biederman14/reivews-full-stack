@@ -2,38 +2,41 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
 	<title>Category Page</title>
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/css/layout.css">
 </head>
-	<div th:each="review : ${category.reviews}">
-	
-		<a th:href="|/reviews/${review.id}|" th:text="${review.cragName}"></a>
-		
-		<ul>
-				<li>
-					<h2>Location</h2>
-					<address th:text="${review.location}"></address>
-				</li>
+	<body>
+		<div class="container">
+			<header th:text="${category.stateName}">
+				<h1>Local Crags</h1>
+			</header>
+			
+			<main>
+				<div th:each="review : ${category.reviews}">
+					<li><a th:href="|/reviews/${review.id}|" th:text="${review.cragName}"></a></li>
+				
+				<!-- <ul>
+						<li>
+							<address th:text="${review.location}"></address>
+						</li>
 
-				<li>
-					<h2>Route Number</h2>
-					<address th:text="${review.numberOfRoutes}"></address>
-				</li>
+						<li>
+							<h2>Route Number</h2>
+							<address th:text="${review.numberOfRoutes}"></address>
+						</li>
 
-				<li>
-					<h2>Description</h2>
-					<address th:text="${review.description}"></address>
-				</li>
-			</ul>
-		
+						<li>
+							<h2>Description</h2>
+							<address th:text="${review.description}"></address>
+						</li>
+					</ul> -->
+				
+			</div>
+			</main>
+			<footer>
+				<a href="/">Home</a>
+				<small>&copy; 2018</small>
+			</footer>
 	</div>
-	
-	
-<body>
-	<main>
-		
-	</main>
-	<footer>
-		<a href="/">Back Home</a>
-		<small>&copy; 2018</small>
-	</footer>
 </body>
 </html>

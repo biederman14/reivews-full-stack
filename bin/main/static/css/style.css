@@ -1,0 +1,38 @@
+*{
+	box-sizing: border-box;
+	font: #EEECE9;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+} 
+
+a {
+	background-color: #85AFCC;
+	color: #EEECE9;
+}
+
+body {
+	background-color: #243763;
+	margin: 5vh;
+	padding: 2vh;
+}
+
+.container {
+	background-color: #EEECE9;
+	color: #7E8154;
+	text-shadow: 0px 0px;
+}
+
+footer {
+	
+}
+
+header {
+	text-shadow: 1px 1px black;
+}
+
+main {
+	display: flex;
+	background-color: #53CB8A;
+	border: 3px b;
+}
