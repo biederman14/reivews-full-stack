@@ -1,14 +1,32 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-	<title>This is the Category Page</title>
-
+	<title>Category Page</title>
 </head>
-	<ul th:each="review : ${category.reviews}">
-		<li th:text="${review.cragName}"><a th:href="|/reviews/${category.review.id}|">Review of:</a>
-			
-		</li>
-	</ul>
+	<div th:each="review : ${category.reviews}">
+	
+		<a th:href="|/reviews/${review.id}|" th:text="${review.cragName}"></a>
+		
+		<ul>
+				<li>
+					<h2>Location</h2>
+					<address th:text="${review.location}"></address>
+				</li>
+
+				<li>
+					<h2>Route Number</h2>
+					<address th:text="${review.numberOfRoutes}"></address>
+				</li>
+
+				<li>
+					<h2>Description</h2>
+					<address th:text="${review.description}"></address>
+				</li>
+			</ul>
+		
+	</div>
+	
+	
 <body>
 	<main>
 		
