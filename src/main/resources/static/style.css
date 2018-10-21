@@ -1,0 +1,24 @@
+* {
+   	color: pink;
+    font: 700 16px 'Open Sans', sans-serif;*/
+    font-color: #EEECE9;
+    text-decoration: none;
+}
+
+body {
+	background-color: #243763;
+}
+
+.container{
+	background-color: pink;
+	
+
+
+a {
+  background-color: #53CB8A;
+ 
+}
+
+header{
+	margin-left: 20px;
+}

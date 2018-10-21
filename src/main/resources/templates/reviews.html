@@ -2,25 +2,25 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
 	<title>Reviews</title>
-	<link rel="stylesheet" type="text/css" href="advances.css">
+	<link rel="stylesheet" type="text/css" href="./layout.css">
+	<link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 <body>
 	<div class="container">
 		<header>
 			<h1>Reviews</h1>
 		</header>
-			<main>
+		
 				<nav>
 					<ul>
-						<li><a href="/reviews">All Reviews</a></li>
-						<li th:each="review : ${reviews}"><a the:href="|/reviews/${review.id}|" th:text="${review.cragName}">Review of:</a></li>
+						<li th:each="review : ${reviews}"><a th:href="|/reviews/${review.id}|" th:text="${review.cragName}">Review of:</a></li>
 					</ul>
 				</nav>
-			</main>
-	</div>
+	
 		<footer>
-			<a href="/index">Back Home</a>
+			<a href="/">Back Home</a>
 			<small>&copy; 2018</small>
 		</footer>
+	</div>
 </body>
 </html>

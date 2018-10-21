@@ -1,9 +1,19 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head>
-	<title>This is the Main (Index) Page</title>
-</head>
-<body>
-
-</body>
+	<head>
+		<title>Home</title>
+		<link rel="stylesheet" type="text/css" href="./layout.css">
+		<link rel="stylesheet" type="text/css" href="./style.css">
+	</head>
+	<body>
+		<div class="container">
+		<header>
+			<h1>Really Cool Rock Stuff</h1>
+		</header>
+		<main>
+			<a th:href="categories">categories</a>
+			<a th:href="reviews">reviews</a>
+		</main>
+		</div>
+	</body>
 </html>

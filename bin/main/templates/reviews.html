@@ -1,9 +1,26 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-	<title>This is the Review Page</title>
+	<title>Reviews</title>
+	<link rel="stylesheet" type="text/css" href="./layout.css">
+	<link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 <body>
-
+	<div class="container">
+		<header>
+			<h1>Reviews</h1>
+		</header>
+		
+				<nav>
+					<ul>
+						<li th:each="review : ${reviews}"><a th:href="|/reviews/${review.id}|" th:text="${review.cragName}">Review of:</a></li>
+					</ul>
+				</nav>
+	
+		<footer>
+			<a href="/">Back Home</a>
+			<small>&copy; 2018</small>
+		</footer>
+	</div>
 </body>
 </html>

@@ -2,10 +2,23 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
 	<title>Categories</title>
+	<link rel="stylesheet" type="text/css" href="./layout.css">
+	<link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 <body>
+	<div class="container">
+	<header>
+		
+	</header>
+	<main>
 	<li th:each="category : ${categories}">
 		<a th:href="|/categories/${category.id}|" th:text="${category.stateName}"></a>
 	</li>
+	</main>
+	<footer>
+		<a href="/">Back Home</a>
+		<small>&copy; 2018</small>
+	</footer>
+	</div>
 </body>
 </html>
