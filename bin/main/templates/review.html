@@ -2,7 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
 	<title th:text="|${review.cragName}|">Review</title>
-	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/css/layout.css">
 		<link rel="stylesheet" type="text/css" href="/css/style.css">
 
 </head>
@@ -13,7 +13,7 @@
 		</header>
 
 		 <main>
-		<ul>
+			<ul>
 				<li>
 					<h2>Location</h2>
 					<address th:text="${review.location}"></address>
@@ -29,9 +29,9 @@
 					<address th:text="${review.description}"></address>
 				</li>
 			</ul>
-		</main> -->
+		</main> 
 		<footer>
-			<a href="/">Back Home</a>
+			<a href="/">Home</a>
 			<small>&copy; 2018</small>
 		</footer>
 	</div>

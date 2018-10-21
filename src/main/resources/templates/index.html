@@ -2,14 +2,21 @@
 <html xmlns:th="http://www.thymeleaf.org">
 	<head>
 		<title>This is the Main (Index) Page</title>
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+		<link rel="stylesheet" type="text/css" href="./css/layout.css">
 	</head>
 	<body>
+		<div class="container">
 		<header>
-			<h1>Really Cool Rock Stuff</h1>
+			<h1>Rock Reviews for Climbers USA</h1>
 		</header>
 		<main>
-			<a th:href="categories">categories</a>
-			<a th:href="reviews">reviews</a>
+			<a th:href="categories">SEARCH BY STATE</a>
+			<a th:href="reviews">ALL REVIEWS</a>
 		</main>
+		<footer>
+		<small>&copy; 2018</small>
+		</footer>
+		</div>
 	</body>
 </html>
