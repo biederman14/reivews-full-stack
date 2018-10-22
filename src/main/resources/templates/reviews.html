@@ -6,23 +6,29 @@
 	<link rel="stylesheet" type="text/css" href="./css/layout.css">
 </head>
 <body>
+	<div class="top"></div>
 	<div class="container">
 		<header>
 			<h1>Reviews</h1>
 		</header>
 		<main>
+			<div class="reviews-page">
 				<nav>
 					<ul>
-						<li><a href="/reviews">All Reviews</a></li>
 						<li th:each="review : ${reviews}"><a th:href="|/reviews/${review.id}|" th:text="${review.cragName}">Review of:</a></li>
 					</ul>
 				</nav>
+			</div>	
 		</main>
 	
 		<footer>
-			<a href="/">Home</a>
+			<div class="footer-tags">
+				<div class="home"><a href="/">HOME</a></div>
+				<div class="states"><a th:href="categories">STATES</a></div>
+			</div>
 			<small>&copy; 2018</small>
 		</footer>
 	</div>
+	<div class="bottom"></div>
 </body>
 </html>
