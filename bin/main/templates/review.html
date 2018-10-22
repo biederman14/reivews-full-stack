@@ -7,33 +7,42 @@
 
 </head>
 <body>
+	<div class="top"></div>
 	<div class="container">
 		<header>
 			<h1 th:text="${review.cragName}"></h1>
 		</header>
 
 		 <main>
-			<ul>
-				<li>
-					<h2>Location</h2>
-					<address th:text="${review.location}"></address>
-				</li>
+		 	<div class="one-review">
+				<ul>
+					<li>
+						<h2>Location:</h2>
+						<address th:text="${review.location}"></address>
+					</li>
 
-				<li>
-					<h2>Route Number</h2>
-					<address th:text="${review.numberOfRoutes}"></address>
-				</li>
+					<li>
+						<h2>Route Number:</h2>
+						<address th:text="${review.numberOfRoutes}"></address>
+					</li>
 
-				<li>
-					<h2>Description</h2>
-					<address th:text="${review.description}"></address>
-				</li>
-			</ul>
+					<li>
+						<h2>Description:</h2>
+						<address th:text="${review.description}"></address>
+					</li>
+				</ul>
+			</div>
 		</main> 
 		<footer>
-			<a href="/">Home</a>
+			<div class="footer-tags">
+				<div class="home"><a href="/">HOME</a></div>
+				<div class="states"><a href="/categories">STATES</a></div>
+				<div class="reviews"><a href="/reviews">REVIEWS</a></div>
+			</div>
 			<small>&copy; 2018</small>
 		</footer>
 	</div>
+	<div class="bottom"></div>
 </body>
 </html>
+

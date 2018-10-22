@@ -6,6 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="/css/layout.css">
 </head>
 	<body>
+		<div class="top"></div>
 		<div class="container">
 			<header th:text="${category.stateName}">
 				<h1>Local Crags</h1>
@@ -34,9 +35,14 @@
 			</div>
 			</main>
 			<footer>
-				<a href="/">Home</a>
+				<div class="footer-tags">
+				<div class="home"><a href="/">HOME</a></div>
+				<div class="states"><a href="/categories">STATES</a></div>
+				<div class="reviews"><a href="/reviews">ALL REVIEWS</a></div>
+			</div>
 				<small>&copy; 2018</small>
 			</footer>
 	</div>
+	<div class="bottom"></div>
 </body>
 </html>

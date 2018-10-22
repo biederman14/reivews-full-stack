@@ -6,21 +6,28 @@
 		<link rel="stylesheet" type="text/css" href="./css/layout.css">
 </head>
 <body>
+	<div class="top"></div>
 	<div class="container">
 	<header>
 		<h1>States</h1>
 	</header>
 	<main>
-		<ul>
-		<li th:each="category : ${categories}">
-			<a th:href="|/categories/${category.id}|" th:text="${category.stateName}"></a>
-		</li>
-		</ul>
+		<div class="states-page">
+			<ul>
+			<li th:each="category : ${categories}">
+				<a th:href="|/categories/${category.id}|" th:text="${category.stateName}"></a>
+			</li>
+			</ul>
+		</div>
 	</main>
 	<footer>
-		<a href="/">Home</a>
+		<div class="footer-tags">
+			<div class="home"><a href="/">HOME</a></div>
+			<div class="reviews"><a th:href="reviews">ALL REVIEWS</a></div>
+		</div>
 		<small>&copy; 2018</small>
 	</footer>
 	</div>
+	<div class="bottom"></div>
 </body>
 </html>
